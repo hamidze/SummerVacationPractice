@@ -23,8 +23,14 @@
       <root url="jar://$PROJECT_DIR$/lib/streambuffer.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/woodstox-core-asl.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/jaxws-rt.jar!/" />
+      <root url="jar://D:/jar包/javax.servlet-api-3.1.0.jar!/" />
+      <root url="file://$PROJECT_DIR$/web/WEB-INF/lib" />
     </CLASSES>
-    <JAVADOC />
+    <JAVADOC>
+      <root url="https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api" />
+      <root url="https://mvnrepository.com/artifact/javax.servlet/servlet-api" />
+    </JAVADOC>
     <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/web/WEB-INF/lib" recursive="false" />
   </library>
 </component>
