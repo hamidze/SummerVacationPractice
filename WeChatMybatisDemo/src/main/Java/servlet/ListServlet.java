@@ -1,6 +1,7 @@
 package servlet;
 
 import bean.Message;
+import service.ListService;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -19,28 +20,17 @@ public class ListServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        try {
-            Class.forName("com.mysql.jdbc.Driver");
-            Connection conn = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/micro_message","root","000000");
-            String sql = "SELECT id, command, description, content FROM message";
-            PreparedStatement statement = conn.prepareStatement(sql);
-            ResultSet rs = statement.executeQuery();
-            List<Message> messageList = new ArrayList<Message>();
-            while(rs.next()){
-                Message message = new Message();
-                message.setId(rs.getString("ID"));
-                message.setCommand(rs.getString("COMMAND"));
-                message.setContent(rs.getString("CONTENT"));
-                message.setDescription(rs.getString("DESCRIPTION"));
-                messageList.add(message);
-            }
-//            System.out.println(messageList.get(0).getDescription());
-            req.setAttribute("messageList", messageList);
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
+        // 设置编码
+        req.setCharacterEncoding("UTF-8");
+        // 接受页面的值
+        String command = req.getParameter("command");
+        String description = req.getParameter("description");
+        // 向页面传值
+        req.setAttribute("command", command);
+        req.setAttribute("description", description);
+        ListService listService = new ListService();
+        // 查询消息列表并传给页面
+        req.setAttribute("messageList", listService.queryMessageList(command, description));
         req.getRequestDispatcher("/WEB-INF/jsp/back/list.jsp").forward(req, resp);
     }
 
