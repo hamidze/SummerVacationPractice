@@ -22,6 +22,7 @@ public class AutoReplyServlet extends HttpServlet {
 		resp.setContentType("text/html;charset=utf-8");
 		PrintWriter out = resp.getWriter();
 		QueryService queryService = new QueryService();
+        System.out.println(queryService.queryByCommand(req.getParameter("content")));
 		out.write(queryService.queryByCommand(req.getParameter("content")));
 		out.flush();
 		out.close();
