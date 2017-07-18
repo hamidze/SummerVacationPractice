@@ -40,6 +40,46 @@ public class MessageDao {
     }
 
     /**
+     * 单条删除
+     */
+    public void deleteOne(int id) {
+        DBAccess dbAccess = new DBAccess();
+        SqlSession sqlSession = null;
+        try {
+            sqlSession = dbAccess.getSqlSession();
+            // 通过sqlSession执行SQL语句
+            sqlSession.delete("Message.deleteOne", id);
+            sqlSession.commit();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if(sqlSession != null) {
+                sqlSession.close();
+            }
+        }
+    }
+
+    /**
+     * 多条删除
+     */
+    public void deleteBatch(List<Integer> ids) {
+        DBAccess dbAccess = new DBAccess();
+        SqlSession sqlSession = null;
+        try {
+            sqlSession = dbAccess.getSqlSession();
+            // 通过sqlSession执行SQL语句
+            sqlSession.delete("Message.deleteBatch", ids);
+            sqlSession.commit();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if(sqlSession != null) {
+                sqlSession.close();
+            }
+        }
+    }
+
+    /**
      * 根据查询条件查询消息列表
      */
 //    public List<Message> queryMessageList(String command, String description) {
