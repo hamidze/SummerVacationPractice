@@ -13,6 +13,10 @@
 * [Servlet+Ajax实现搜索框智能提示](http://www.imooc.com/learn/678)
 * 搜索框相信大家都不陌生，几乎每天都会在各类网站进行着搜索。有没有注意到，很多的搜索功能，当输入内容时，下面会出现提示。这类提示就叫做搜索框的智能提示，本门课程就为大家介绍如何使用Servlet和Ajax来实现。主要介绍实现原理和代码的前后台实现过程。
 
+### SpringMVCDemo
+* [Spring MVC起步](http://www.imooc.com/learn/47)
+* Spring MVC为我们提供了一个基于组件和松耦合的MVC实现框架。在使用Java中其它MVC框架多年之后，面对Spring MVC有一种相见恨晚的感觉。Spring MVC是如此的优雅，轻盈与简洁， 让人从其它框架的桎梏解脱出来。本课程将带你步入Spring MVC。
+
 ### WeChatMybatisDemo
 * [通过自动回复机器人学Mybatis---基础版](http://www.imooc.com/learn/154)
 * 各位小伙伴们，你是否还在为使用Java中原始 JDBC 的开发方式的繁琐而苦恼呢？ Mybatis可以帮你解决这个难题，在本次课程中，让我们通过基础教程加案例实战开发的学习方式，逐步学习Mybatis的下载与配置以及基本功能应用。
