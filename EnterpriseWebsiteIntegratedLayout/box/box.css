@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+/* 盒子模型 */
+/* 宽度 = 左边距 + 左边框 + 左填充 + 内容宽度 + 右填充 + 右边框 + 右边距*/
+.box1{
+	width: 100px;
+	height: 120px;
+	border: 1px solid #F00;
+	margin-bottom: 10px;
+	margin: 1px 2px 3px 4px;
+	padding-left: 10px;
+}
+
+.box2{
+	width: 62px;
+	height: 150px;
+	border: 20px solid #00F;
+	padding-top: 10px;
+}

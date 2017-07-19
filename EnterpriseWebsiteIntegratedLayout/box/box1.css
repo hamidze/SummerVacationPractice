@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+/* 浮动属性 */
+/* 宽度 = 左边距 + 左边框 + 左填充 + 内容宽度 + 右填充 + 右边框 + 右边距*/
+.box1{
+	width: 100px;
+	height: 100px;
+	border: 1px solid #F00;
+	background-color: #CF9;
+	float: left;
+}
+
+.box2{
+	width: 200px;
+	height: 200px;
+	border: 1px solid #00F;
+	background-color: #FF6;
+	float: left;
+}
+
+.box3{
+	width: 500px;
+	height: 500px;
+	border: 1px solid #3F6;
+	background-color: #C6C;
+	clear: left;
+}
