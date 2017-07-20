@@ -3,8 +3,7 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans.xsd" >
-
-        <bean id="beanScope" class="bean.BeanScope" scope="prototype"></bean>
-        <!--<bean id="beanScope" class="bean.BeanScope" scope="singleton"></bean>    -->
-
+        
+        <bean  id="moocResource" class="resource.MoocResource" ></bean>
+	
  </beans>
