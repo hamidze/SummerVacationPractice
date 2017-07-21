@@ -1,19 +1,19 @@
 package proxy;
 
-public class Car3 implements Moveable {
+public class CarTimeProxy implements Moveable {
 
-	public Car3(Car car) {
+	public CarTimeProxy(Moveable m) {
 		super();
-		this.car = car;
+		this.m = m;
 	}
 
-	private Car car;
+	private Moveable m;
 	
 	@Override
 	public void move() {
 		long starttime = System.currentTimeMillis();
 		System.out.println("汽车开始行驶....");
-		car.move();
+		m.move();
 		long endtime = System.currentTimeMillis();
 		System.out.println("汽车结束行驶....  汽车行驶时间：" 
 				+ (endtime - starttime) + "毫秒！");

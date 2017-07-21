@@ -4,16 +4,12 @@ public class Client {
 
 	/**
 	 * 测试类
+	 * @throws Exception 
 	 */
-	public static void main(String[] args) {
-//		Car car = new Car();
-//		car.move();
-		//使用集成方式
-//		Moveable m = new Car2();
-//		m.move();
-		//使用聚合方式实现
+	public static void main(String[] args) throws Exception {
 		Car car = new Car();
-		Moveable m = new Car3(car);
+		InvocationHandler h = new TimeHandler(car);
+		Moveable m = (Moveable)Proxy.newProxyInstance(Moveable.class,h);
 		m.move();
 	}
 
