@@ -28,7 +28,8 @@ public class MessageDao {
             Message message = new Message();
             message.setCommand(command);
             message.setDescription(description);
-            messageList = sqlSession.selectList("queryMessageList", message);
+            IMessage imessage = sqlSession.getMapper(IMessage.class);
+            messageList = imessage.queryMessageList(message);
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
