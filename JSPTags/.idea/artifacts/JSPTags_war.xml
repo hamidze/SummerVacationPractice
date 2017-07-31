@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="JSPTags:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="151250052.war">
+      <element id="artifact" artifact-name="JSPTags:war exploded" />
+    </root>
+  </artifact>
+</component>
