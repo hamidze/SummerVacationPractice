@@ -5,19 +5,18 @@
  * Date: 2017/9/3
  * Time: 10:08
  */
-
-$link = "";
-
+require_once "../include.php";
 /**
  * 连接数据库
  * @return resource
  */
-function connect($link1){
-    mysqli_set_charset($link1, DB_CHARSET);
-    mysqli_select_db($link1, DB_NAME) or die("指定数据库打开失败");
-    global $link;
-    $link = $link1;
-    return $link1;
+function connect(){
+    $link = mysqli_connect(DB_HOST,DB_USER,DB_PWD,DB_NAME) or die('connect error:'.mysqli_connect_errno().":".mysqli_connect_error());
+    mysqli_set_charset($link, DB_CHARSET);
+    mysqli_select_db($link, DB_NAME) or die("指定数据库打开失败");
+//    global $link;
+//    $link = $link1;
+    return $link;
 }
 
 /**
@@ -26,13 +25,12 @@ function connect($link1){
  * @param array $array
  * @return number
  */
-function insert($table,$array){
+function insert($table,$array,$link){
     $keys=join(",",array_keys($array));
     $vals="'".join("','",array_values($array))."'";
     $sql="insert {$table}($keys) values({$vals})";
-    global $link;
     mysqli_query($link, $sql);
-    return mysqli_insert_id();
+    return mysqli_insert_id($link);
 }
 
 //update imooc_admin set username='king' where id=1
@@ -43,7 +41,7 @@ function insert($table,$array){
  * @param string $where
  * @return number
  */
-function update($table,$array,$where=null){
+function update($link, $table,$array,$where=null){
     $str = null;
     foreach($array as $key=>$val){
         if($str==null){
@@ -54,12 +52,11 @@ function update($table,$array,$where=null){
         $str.=$sep.$key."='".$val."'";
     }
     $sql="update {$table} set {$str} ".($where==null?null:" where ".$where);
-    global $link;
     $result=mysqli_query($link, $sql);
     //var_dump($result);
     //var_dump(mysql_affected_rows());exit;
     if($result){
-        return mysqli_affected_rows();
+        return mysqli_affected_rows($link);
     }else{
         return false;
     }
@@ -71,12 +68,11 @@ function update($table,$array,$where=null){
  * @param string $where
  * @return number
  */
-function delete($table,$where=null){
+function delete($link, $table,$where=null){
     $where=$where==null?null:" where ".$where;
     $sql="delete from {$table} {$where}";
-    global $link;
     mysqli_query($link,$sql);
-    return mysqli_affected_rows();
+    return mysqli_affected_rows($link);
 }
 
 /**
@@ -99,10 +95,10 @@ function fetchOne($sql,$result_type=MYSQL_ASSOC){
  * @param string $result_type
  * @return multitype:
  */
-function fetchAll($sql,$result_type=MYSQL_ASSOC){
-    global $link;
+function fetchAll($sql, $link, $result_type=MYSQL_ASSOC){
+    $rows[] = null;
     $result=mysqli_query($link, $sql);
-    while(@$row=mysqli_fetch_array($result,$result_type)){
+    while(@$row=mysqli_fetch_array($result, $result_type)){
         $rows[]=$row;
     }
     return $rows;
@@ -124,5 +120,6 @@ function getResultNum($sql){
  * @return number
  */
 function getInsertId(){
-    return mysqli_insert_id();
+    global $link;
+    return mysqli_insert_id($link);
 }

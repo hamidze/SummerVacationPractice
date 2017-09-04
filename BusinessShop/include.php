@@ -19,5 +19,4 @@ require_once 'page.func.php';
 require_once "configs.php";
 require_once "admin.inc.php";
 
-$link = mysqli_connect(DB_HOST,DB_USER,DB_PWD,DB_NAME) or die('connect error:'.mysqli_connect_errno().":".mysqli_connect_error());
-connect($link);
+$link = connect();
