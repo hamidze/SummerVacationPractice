@@ -1,10 +1,11 @@
 <?php
 require_once '../include.php';
-//$pageSize=2;
-//$page=$_REQUEST['page']?(int)$_REQUEST['page']:1;
-//$rows=getAdminByPage($page,$pageSize);
+$pageSize=2;
+$page = null;
+$page=$_REQUEST['page']?(int)$_REQUEST['page']:1;
+$rows=getAdminByPage($link, $page, $pageSize);
 //$sql="select * from imooc_admin";
-//$totalRows=getResultNum($sql);
+//$totalRows=getResultNum($link, $sql);
 //$pageSize=2;
 //$totalPage=ceil($totalRows/$pageSize);
 //$pageSize=2;
@@ -15,9 +16,9 @@ require_once '../include.php';
 //if($page>=$totalPage)$page=$totalPage;
 //$offset=($page-1)*$pageSize;
 //$sql="select id,username,email from imooc_admin limit {$offset},{$pageSize}";
-//$rows=fetchAll($sql);
+//$rows=fetchAll($sql, $link);
 
-$rows=getAllAdmin($link);
+//$rows=getAllAdmin($link);
 
 if(!$rows){
     alertMes("sorry,没有管理员,请添加!","addAdmin.php");
@@ -60,11 +61,11 @@ if(!$rows){
                 <td align="center"><input type="button" value="修改" class="btn" onclick="editAdmin(<?php echo $row['id'];?>)"><input type="button" value="删除" class="btn"  onclick="delAdmin(<?php echo $row['id'];?>)"></td>
             </tr>
         <?php endforeach;?>
-<!--        --><?php //if($totalRows>$pageSize):?>
-<!--            <tr>-->
-<!--                <td colspan="4">--><?php //echo showPage($page, $totalPage);?><!--</td>-->
-<!--            </tr>-->
-<!--        --><?php //endif;?>
+        <?php if($totalRows>$pageSize):?>
+            <tr>
+                <td colspan="4"><?php echo showPage($page, $totalPage);?></td>
+            </tr>
+        <?php endif;?>
         </tbody>
     </table>
 </div>

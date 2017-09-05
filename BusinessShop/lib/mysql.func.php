@@ -81,8 +81,7 @@ function delete($link, $table,$where=null){
  * @param string $result_type
  * @return multitype:
  */
-function fetchOne($sql,$result_type=MYSQL_ASSOC){
-    global $link;
+function fetchOne($link, $sql,$result_type=MYSQL_ASSOC){
     $result=mysqli_query($link, $sql);
     $row=mysqli_fetch_array($result,$result_type);
     return $row;
@@ -109,8 +108,7 @@ function fetchAll($sql, $link, $result_type=MYSQL_ASSOC){
  * @param unknown_type $sql
  * @return number
  */
-function getResultNum($sql){
-    global $link;
+function getResultNum($link, $sql){
     $result=mysqli_query($link,$sql);
     return mysqli_num_rows($result);
 }
@@ -119,7 +117,6 @@ function getResultNum($sql){
  * 得到上一步插入记录的ID号
  * @return number
  */
-function getInsertId(){
-    global $link;
+function getInsertId($link){
     return mysqli_insert_id($link);
 }

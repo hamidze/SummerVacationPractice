@@ -7,8 +7,8 @@
  */
 require_once "../include.php";
 
-function checkAdmin($sql){
-    return fetchOne($sql);
+function checkAdmin($link, $sql){
+    return fetchOne($link, $sql);
 }
 
 /**
@@ -42,6 +42,22 @@ function addAdmin($link){
 function getAllAdmin($link){
 
     $sql="select id,username,email from imooc_admin ";
+    $rows=fetchAll($sql, $link);
+    return $rows;
+}
+
+function getAdminByPage($link, $page, $pageSize=2){
+    $sql="select * from imooc_admin";
+    global $totalRows;
+    $totalRows=getResultNum($link, $sql);
+    global $totalPage;
+    $totalPage=ceil($totalRows/$pageSize);
+    if($page<1||$page==null||!is_numeric($page)){
+        $page=1;
+    }
+    if($page>=$totalPage)$page=$totalPage;
+    $offset=($page-1)*$pageSize;
+    $sql="select id,username,email from imooc_admin limit {$offset},{$pageSize}";
     $rows=fetchAll($sql, $link);
     return $rows;
 }

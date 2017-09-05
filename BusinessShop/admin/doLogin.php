@@ -13,7 +13,7 @@ $verify1 = $_SESSION['verify'];
 $autoFlag= $_POST['autoFlag'];
 if($verify == $verify1){
     $sql = "select * from imooc_admin where username='{$username}' and password='{$password}'";
-    $row = checkAdmin($sql);
+    $row = checkAdmin($link, $sql);
 //    var_dump($res);
     if($row){
         //如果选了一周内自动登陆
