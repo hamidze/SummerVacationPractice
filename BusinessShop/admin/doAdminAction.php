@@ -8,7 +8,7 @@
 require_once '../include.php';
 checkLogined();
 $act=$_REQUEST['act'];
-$id=$_REQUEST['id'];
+$id=$_REQUEST['id']?$_REQUEST['id']:null;
 if($act=="logout"){
     logout();
 }elseif($act=="addAdmin") {
@@ -17,6 +17,13 @@ if($act=="logout"){
     $mes=editAdmin($id, $link);
 }elseif($act=="delAdmin"){
     $mes=delAdmin($id, $link);
+}elseif($act=="addCate") {
+    $mes = addCate($link);
+}elseif($act=="editCate"){
+    $where="id={$id}";
+    $mes=editCate($link, $where);
+}elseif($act=="delCate"){
+    $mes=delCate($link, $id);
 }
 
 ?>

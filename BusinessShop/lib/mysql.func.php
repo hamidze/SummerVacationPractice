@@ -95,7 +95,7 @@ function fetchOne($link, $sql,$result_type=MYSQL_ASSOC){
  * @return multitype:
  */
 function fetchAll($sql, $link, $result_type=MYSQL_ASSOC){
-    $rows[] = null;
+//    $rows[] = null;
     $result=mysqli_query($link, $sql);
     while(@$row=mysqli_fetch_array($result, $result_type)){
         $rows[]=$row;
