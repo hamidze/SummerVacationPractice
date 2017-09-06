@@ -2,17 +2,17 @@
 /**
  * Created by PhpStorm.
  * User: Thpffcj
- * Date: 2017/9/3
- * Time: 10:08
+ * Date: 2017/9/6
+ * Time: 16:55
  */
+require_once '../lib/string.func.php';
+header("content-type:text/html;charset=utf-8");
+//print_r($_FILES);
 /**
  * 构建上传文件信息
  * @return array
  */
 function buildInfo(){
-    if(!$_FILES){
-        return ;
-    }
     $i=0;
     foreach($_FILES as $v){
         //单文件
@@ -39,9 +39,6 @@ function uploadFile($path="uploads",$allowExt=array("gif","jpeg","png","jpg","wb
     }
     $i=0;
     $files=buildInfo();
-    if(!($files&&is_array($files))){
-        return ;
-    }
     foreach($files as $file){
         if($file['error']===UPLOAD_ERR_OK){
             $ext=getExt($file['name']);
@@ -64,9 +61,9 @@ function uploadFile($path="uploads",$allowExt=array("gif","jpeg","png","jpg","wb
             }
             $filename=getUniName().".".$ext;
             $destination=$path."/".$filename;
-            if(move_uploaded_file($file['tmp_name'], $destination)){
+            if(move_uploaded_file($file['tmp_name'],$destination)){
                 $file['name']=$filename;
-                unset($file['tmp_name'],$file['size'],$file['type']);
+                unset($file['error'],$file['tmp_name'],$file['size'],$file['type']);
                 $uploadedFiles[$i]=$file;
                 $i++;
             }
@@ -82,7 +79,7 @@ function uploadFile($path="uploads",$allowExt=array("gif","jpeg","png","jpg","wb
                     $mes="文件部分被上传";//UPLOAD_ERR_PARTIAL
                     break;
                 case 4:
-                    $mes="没有文件被上传1111";//UPLOAD_ERR_NO_FILE
+                    $mes="没有文件被上传";//UPLOAD_ERR_NO_FILE
                     break;
                 case 6:
                     $mes="没有找到临时目录";//UPLOAD_ERR_NO_TMP_DIR
@@ -99,3 +96,6 @@ function uploadFile($path="uploads",$allowExt=array("gif","jpeg","png","jpg","wb
     }
     return $uploadedFiles;
 }
+
+$fileInfo=uploadFile();
+print_r($fileInfo);
