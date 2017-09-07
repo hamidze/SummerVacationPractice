@@ -24,6 +24,8 @@ if($act=="logout"){
     $mes=editCate($link, $where);
 }elseif($act=="delCate"){
     $mes=delCate($link, $id);
+}elseif($act=="addPro"){
+    $mes=addPro($link);
 }
 
 ?>
