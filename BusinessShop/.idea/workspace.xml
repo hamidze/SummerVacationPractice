@@ -15,7 +15,7 @@
       <file leaf-file-name="listPro.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/listPro.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1260">
+            <state relative-caret-position="492">
               <caret line="70" column="12" lean-forward="false" selection-start-line="70" selection-start-column="12" selection-end-line="70" selection-end-column="12" />
               <folding>
                 <marker date="1504794004970" expanded="true" signature="314:460" ph="select p.id,... imooc_pro" />
@@ -25,36 +25,80 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="editPro.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/editPro.php">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="8" column="27" lean-forward="false" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pro.inc.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/core/pro.inc.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="492">
-              <caret line="77" column="28" lean-forward="false" selection-start-line="77" selection-start-column="28" selection-end-line="77" selection-end-column="28" />
+            <state relative-caret-position="2854">
+              <caret line="188" column="50" lean-forward="false" selection-start-line="188" selection-start-column="37" selection-end-line="188" selection-end-column="50" />
               <folding>
-                <marker date="1504794999319" expanded="true" signature="5086:5231" ph="select p.id,... imooc_pro" />
-                <marker date="1504794999319" expanded="true" signature="5395:5443" ph="select a.alb... imooc_album" />
-                <marker date="1504794999319" expanded="true" signature="5608:5771" ph="select p.id,... imooc_pro" />
+                <element signature="e#7113#7117#0#HTML" expanded="true" />
+                <element signature="e#7117#7121#0#HTML" expanded="true" />
+                <element signature="e#10004#10010#0#HTML" expanded="true" />
+                <element signature="e#10029#10035#0#HTML" expanded="true" />
+                <element signature="e#10035#10041#0#HTML" expanded="true" />
+                <element signature="e#10041#10047#0#HTML" expanded="true" />
+                <element signature="e#10061#10067#0#HTML" expanded="true" />
+                <element signature="e#10067#10073#0#HTML" expanded="true" />
+                <element signature="e#10073#10079#0#HTML" expanded="true" />
+                <element signature="e#10095#10101#0#HTML" expanded="true" />
+                <element signature="e#10101#10107#0#HTML" expanded="true" />
+                <element signature="e#10107#10113#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="upload.func.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/upload.func.php">
+      <file leaf-file-name="admin.inc.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/admin.inc.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1422">
-              <caret line="84" column="33" lean-forward="false" selection-start-line="84" selection-start-column="26" selection-end-line="84" selection-end-column="33" />
-              <folding />
+            <state relative-caret-position="126">
+              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="32" />
+              <folding>
+                <element signature="e#6#87#0#PHP" expanded="true" />
+                <marker date="1504853033584" expanded="true" signature="779:820" ph="select id,us... imooc_admin" />
+                <marker date="1504853033584" expanded="true" signature="940:965" ph="select * fro... imooc_admin" />
+                <marker date="1504853033584" expanded="true" signature="1258:1316" ph="select id,us... imooc_admin" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="album.inc.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/album.inc.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="456">
+              <caret line="29" column="14" lean-forward="true" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
+              <folding>
+                <marker date="1504860433607" expanded="true" signature="267:324" ph="select album... imooc_album" />
+                <marker date="1504860433607" expanded="true" signature="485:529" ph="select album... imooc_album" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="proDetails.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/proDetails.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-594">
+              <caret line="27" column="36" lean-forward="true" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
+              <folding>
+                <element signature="e#6989#6995#0#HTML" expanded="true" />
+                <element signature="e#6995#6999#0#HTML" expanded="true" />
+                <element signature="e#6999#7005#0#HTML" expanded="true" />
+                <element signature="e#7075#7081#0#HTML" expanded="true" />
+                <element signature="e#7081#7085#0#HTML" expanded="true" />
+                <element signature="e#7085#7091#0#HTML" expanded="true" />
+                <element signature="e#20137#20143#0#HTML" expanded="true" />
+                <element signature="e#20162#20168#0#HTML" expanded="true" />
+                <element signature="e#20168#20174#0#HTML" expanded="true" />
+                <element signature="e#20174#20180#0#HTML" expanded="true" />
+                <element signature="e#20194#20200#0#HTML" expanded="true" />
+                <element signature="e#20200#20206#0#HTML" expanded="true" />
+                <element signature="e#20206#20212#0#HTML" expanded="true" />
+                <element signature="e#20228#20234#0#HTML" expanded="true" />
+                <element signature="e#20234#20240#0#HTML" expanded="true" />
+                <element signature="e#20240#20246#0#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -72,13 +116,10 @@
         <option value="$PROJECT_DIR$/admin/editAdmin.php" />
         <option value="$PROJECT_DIR$/lib/page.func.php" />
         <option value="$PROJECT_DIR$/admin/doLogin.php" />
-        <option value="$PROJECT_DIR$/core/admin.inc.php" />
         <option value="$PROJECT_DIR$/admin/listAdmin.php" />
         <option value="$PROJECT_DIR$/admin/addCate.php" />
         <option value="$PROJECT_DIR$/admin/listCate.php" />
         <option value="$PROJECT_DIR$/admin/editCate.php" />
-        <option value="$PROJECT_DIR$/lib/mysql.func.php" />
-        <option value="$PROJECT_DIR$/core/cate.inc.php" />
         <option value="$PROJECT_DIR$/test/upload.php" />
         <option value="$PROJECT_DIR$/test/doAction.php" />
         <option value="$PROJECT_DIR$/lib/string.func.php" />
@@ -92,14 +133,19 @@
         <option value="$PROJECT_DIR$/test/resizeImage.php" />
         <option value="$PROJECT_DIR$/test/resizeImage1.php" />
         <option value="$PROJECT_DIR$/lib/image.func.php" />
-        <option value="$PROJECT_DIR$/core/album.inc.php" />
         <option value="$PROJECT_DIR$/include.php" />
         <option value="$PROJECT_DIR$/admin/addPro.php" />
         <option value="$PROJECT_DIR$/lib/upload.func.php" />
         <option value="$PROJECT_DIR$/admin/listPro.php" />
         <option value="$PROJECT_DIR$/admin/editPro.php" />
         <option value="$PROJECT_DIR$/admin/doAdminAction.php" />
+        <option value="$PROJECT_DIR$/core/admin.inc.php" />
+        <option value="$PROJECT_DIR$/core/cate.inc.php" />
         <option value="$PROJECT_DIR$/core/pro.inc.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/lib/mysql.func.php" />
+        <option value="$PROJECT_DIR$/core/album.inc.php" />
+        <option value="$PROJECT_DIR$/proDetails.php" />
       </list>
     </option>
   </component>
@@ -153,7 +199,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -163,6 +208,34 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="BusinessShop" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BusinessShop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BusinessShop" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="styles" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BusinessShop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BusinessShop" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scripts" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -238,6 +311,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -247,15 +321,15 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\PhpStorm\PHPDemo\BusinessShop" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\PhpStorm\PHPDemo\BusinessShop" />
       <recent name="F:\PhpStorm\PHPDemo\BusinessShop\admin" />
       <recent name="F:\PhpStorm\PHPDemo\BusinessShop\plugins" />
       <recent name="F:\PhpStorm\PHPDemo\BusinessShop\test" />
       <recent name="F:\PhpStorm\PHPDemo\BusinessShop\fonts" />
-      <recent name="F:\PhpStorm\PHPDemo\BusinessShop\admin\images" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\PhpStorm\PHPDemo\BusinessShop" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -363,18 +437,18 @@
       <workItem from="1504687278226" duration="7973000" />
       <workItem from="1504743424620" duration="5284000" />
       <workItem from="1504793938338" duration="2729000" />
-      <workItem from="1504836448176" duration="6000" />
+      <workItem from="1504836448176" duration="2263000" />
+      <workItem from="1504851994785" duration="5058000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53350000" />
+    <option name="totallyTimeSpent" value="60665000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15506808" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15733737" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -406,21 +480,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/data/imooc.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.php" />
-    <entry file="file://$PROJECT_DIR$/styles/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-648">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/styles/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-364">
@@ -489,6 +548,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="4" column="49" lean-forward="false" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="49" />
+          <folding>
+            <marker date="1504537539643" expanded="true" signature="169:194" ph="select * fro... imooc_admin" />
+            <marker date="1504537539643" expanded="true" signature="504:562" ph="select id,us... imooc_admin" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -496,6 +559,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="11" column="10" lean-forward="false" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+          <folding>
+            <marker date="1504594376638" expanded="true" signature="93:117" ph="select * fro... imooc_cate" />
+            <marker date="1504594376638" expanded="true" signature="337:402" ph="select id,cN... imooc_cate" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -511,6 +578,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="486">
           <caret line="27" column="19" lean-forward="false" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -598,20 +666,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="258">
           <caret line="39" column="26" lean-forward="false" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/admin.inc.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="16" column="9" lean-forward="false" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="23" column="31" lean-forward="false" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
           <folding />
         </state>
       </provider>
@@ -627,6 +681,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1494">
           <caret line="83" column="1" lean-forward="false" selection-start-line="83" selection-start-column="1" selection-end-line="83" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -642,11 +697,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/uploads/014dc8b6e716f1d0bf9ae8c7032bd4ac.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/imooc.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3294">
@@ -658,6 +708,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-462">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -677,13 +728,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/cate.inc.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="70" column="9" lean-forward="false" selection-start-line="70" selection-start-column="9" selection-end-line="70" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/doAdminAction.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="558">
@@ -692,9 +736,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/admin/uploads/014dc8b6e716f1d0bf9ae8c7032bd4ac.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/admin/listPro.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1260">
+        <state relative-caret-position="492">
           <caret line="70" column="12" lean-forward="false" selection-start-line="70" selection-start-column="12" selection-end-line="70" selection-end-column="12" />
           <folding>
             <marker date="1504794004970" expanded="true" signature="314:460" ph="select p.id,... imooc_pro" />
@@ -703,44 +752,143 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/include.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="23" column="31" lean-forward="false" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/admin/editPro.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
+        <state relative-caret-position="18">
           <caret line="8" column="27" lean-forward="false" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/mysql.func.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="43" column="9" lean-forward="false" selection-start-line="43" selection-start-column="9" selection-end-line="43" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/album.inc.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="9" lean-forward="false" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/upload.func.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1422">
+        <state relative-caret-position="132">
           <caret line="84" column="33" lean-forward="false" selection-start-line="84" selection-start-column="26" selection-end-line="84" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/core/cate.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="70" column="9" lean-forward="false" selection-start-line="70" selection-start-column="9" selection-end-line="70" selection-end-column="9" />
+          <folding>
+            <marker date="1504853448988" expanded="true" signature="531:572" ph="select id,cN... imooc_cate" />
+            <marker date="1504853448988" expanded="true" signature="1498:1529" ph="select id,cN... imooc_cate" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/core/pro.inc.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="492">
-          <caret line="77" column="28" lean-forward="false" selection-start-line="77" selection-start-column="28" selection-end-line="77" selection-end-column="28" />
+        <state relative-caret-position="185">
+          <caret line="165" column="9" lean-forward="false" selection-start-line="165" selection-start-column="9" selection-end-line="165" selection-end-column="9" />
           <folding>
-            <marker date="1504794999319" expanded="true" signature="5086:5231" ph="select p.id,... imooc_pro" />
-            <marker date="1504794999319" expanded="true" signature="5395:5443" ph="select a.alb... imooc_album" />
-            <marker date="1504794999319" expanded="true" signature="5608:5771" ph="select p.id,... imooc_pro" />
+            <marker date="1504854494764" expanded="true" signature="5098:5243" ph="select p.id,... imooc_pro" />
+            <marker date="1504854494764" expanded="true" signature="5407:5455" ph="select a.alb... imooc_album" />
+            <marker date="1504854494764" expanded="true" signature="5620:5783" ph="select p.id,... imooc_pro" />
+            <marker date="1504854494764" expanded="true" signature="5948:5982" ph="select * fro... imooc_pro" />
+            <marker date="1504854494764" expanded="true" signature="6118:6269" ph="select p.id,... imooc_pro" />
+            <marker date="1504854494764" expanded="true" signature="6431:6609" ph="select p.id,... imooc_pro" />
+            <marker date="1504854494764" expanded="true" signature="6772:6952" ph="select p.id,... imooc_pro" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2854">
+          <caret line="188" column="50" lean-forward="false" selection-start-line="188" selection-start-column="37" selection-end-line="188" selection-end-column="50" />
+          <folding>
+            <element signature="e#7113#7117#0#HTML" expanded="true" />
+            <element signature="e#7117#7121#0#HTML" expanded="true" />
+            <element signature="e#10004#10010#0#HTML" expanded="true" />
+            <element signature="e#10029#10035#0#HTML" expanded="true" />
+            <element signature="e#10035#10041#0#HTML" expanded="true" />
+            <element signature="e#10041#10047#0#HTML" expanded="true" />
+            <element signature="e#10061#10067#0#HTML" expanded="true" />
+            <element signature="e#10067#10073#0#HTML" expanded="true" />
+            <element signature="e#10073#10079#0#HTML" expanded="true" />
+            <element signature="e#10095#10101#0#HTML" expanded="true" />
+            <element signature="e#10101#10107#0#HTML" expanded="true" />
+            <element signature="e#10107#10113#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/admin.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="32" />
+          <folding>
+            <element signature="e#6#87#0#PHP" expanded="true" />
+            <marker date="1504853033584" expanded="true" signature="779:820" ph="select id,us... imooc_admin" />
+            <marker date="1504853033584" expanded="true" signature="940:965" ph="select * fro... imooc_admin" />
+            <marker date="1504853033584" expanded="true" signature="1258:1316" ph="select id,us... imooc_admin" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/mysql.func.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="96" column="9" lean-forward="false" selection-start-line="96" selection-start-column="9" selection-end-line="96" selection-end-column="9" />
+          <folding>
+            <element signature="e#6#87#0#PHP" expanded="true" />
+            <marker date="1504854880873" expanded="true" signature="1224:1251" ph="update ${{$t... " />
+            <marker date="1504854880873" expanded="true" signature="1685:1706" ph="delete from " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/album.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="29" column="14" lean-forward="true" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
+          <folding>
+            <marker date="1504860433607" expanded="true" signature="267:324" ph="select album... imooc_album" />
+            <marker date="1504860433607" expanded="true" signature="485:529" ph="select album... imooc_album" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/jquery-1.6.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proDetails.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-594">
+          <caret line="27" column="36" lean-forward="true" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
+          <folding>
+            <element signature="e#6989#6995#0#HTML" expanded="true" />
+            <element signature="e#6995#6999#0#HTML" expanded="true" />
+            <element signature="e#6999#7005#0#HTML" expanded="true" />
+            <element signature="e#7075#7081#0#HTML" expanded="true" />
+            <element signature="e#7081#7085#0#HTML" expanded="true" />
+            <element signature="e#7085#7091#0#HTML" expanded="true" />
+            <element signature="e#20137#20143#0#HTML" expanded="true" />
+            <element signature="e#20162#20168#0#HTML" expanded="true" />
+            <element signature="e#20168#20174#0#HTML" expanded="true" />
+            <element signature="e#20174#20180#0#HTML" expanded="true" />
+            <element signature="e#20194#20200#0#HTML" expanded="true" />
+            <element signature="e#20200#20206#0#HTML" expanded="true" />
+            <element signature="e#20206#20212#0#HTML" expanded="true" />
+            <element signature="e#20228#20234#0#HTML" expanded="true" />
+            <element signature="e#20234#20240#0#HTML" expanded="true" />
+            <element signature="e#20240#20246#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>

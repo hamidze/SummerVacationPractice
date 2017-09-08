@@ -5,7 +5,7 @@
  * Date: 2017/9/3
  * Time: 15:51
  */
-require_once "../include.php";
+//require_once "../include.php";
 
 function checkAdmin($link, $sql){
     return fetchOne($link, $sql);

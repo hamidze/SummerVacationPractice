@@ -5,7 +5,7 @@
  * Date: 2017/9/3
  * Time: 10:08
  */
-require_once "../include.php";
+//require_once "../include.php";
 /**
  * 连接数据库
  * @return resource
@@ -100,7 +100,7 @@ function fetchAll($sql, $link, $result_type=MYSQL_ASSOC){
     while(@$row=mysqli_fetch_array($result, $result_type)){
         $rows[]=$row;
     }
-    return $rows;
+    return isset($rows)?$rows:null;
 }
 
 /**

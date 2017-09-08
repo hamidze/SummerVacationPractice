@@ -47,7 +47,6 @@ function addPro($link){
             }
         }
         $mes="<p>添加失败!</p><a href='addPro.php' target='mainFrame'>重新添加</a>";
-
     }
     return $mes;
 }
@@ -106,7 +105,7 @@ function editPro($link, $id){
 
 function delPro($link, $id){
     $where="id=$id";
-    $res=delete("imooc_pro",$where);
+    $res=delete($link,"imooc_pro",$where);
     $proImgs=getAllImgByProId($link, $id);
     if($proImgs&&is_array($proImgs)){
         foreach($proImgs as $proImg){
@@ -129,7 +128,7 @@ function delPro($link, $id){
         }
     }
     $where1="pid={$id}";
-    $res1=delete("imooc_album",$where1);
+    $res1=delete($link, "imooc_album",$where1);
     if($res&&$res1){
         $mes="删除成功!<br/><a href='listPro.php' target='mainFrame'>查看商品列表</a>";
     }else{
@@ -168,4 +167,47 @@ function getProById($link, $id){
     $sql="select p.id,p.pName,p.pSn,p.pNum,p.mPrice,p.iPrice,p.pDesc,p.pubTime,p.isShow,p.isHot,c.cName,p.cId from imooc_pro as p join imooc_cate c on p.cId=c.id where p.id={$id}";
     $row=fetchOne($link, $sql);
     return $row;
+}
+
+/**
+ * 检查分类下是否有产品
+ * @param int $cid
+ * @return array
+ */
+function checkProExist($link, $cid){
+    $sql="select * from imooc_pro where cId={$cid}";
+    $rows=fetchAll($sql, $link);
+    return $rows;
+}
+
+/**
+ * 得到所有商品
+ * @return array
+ */
+function getAllPros($link){
+    $sql="select p.id,p.pName,p.pSn,p.pNum,p.mPrice,p.iPrice,p.pDesc,p.pubTime,p.isShow,p.isHot,c.cName,p.cId from imooc_pro as p join imooc_cate c on p.cId=c.id ";
+    $rows=fetchAll($sql, $link);
+    return $rows;
+}
+
+/**
+ *根据cid得到4条产品
+ * @param int $cid
+ * @return Array
+ */
+function getProsByCid($link, $cid){
+    $sql="select p.id,p.pName,p.pSn,p.pNum,p.mPrice,p.iPrice,p.pDesc,p.pubTime,p.isShow,p.isHot,c.cName,p.cId from imooc_pro as p join imooc_cate c on p.cId=c.id where p.cId={$cid} limit 4";
+    $rows=fetchAll($sql, $link);
+    return $rows;
+}
+
+/**
+ * 得到下4条产品
+ * @param int $cid
+ * @return array
+ */
+function getSmallProsByCid($link, $cid){
+    $sql="select p.id,p.pName,p.pSn,p.pNum,p.mPrice,p.iPrice,p.pDesc,p.pubTime,p.isShow,p.isHot,c.cName,p.cId from imooc_pro as p join imooc_cate c on p.cId=c.id where p.cId={$cid} limit 4,4";
+    $rows=fetchAll($sql, $link);
+    return $rows;
 }

@@ -50,8 +50,8 @@ function editCate($link, $where){
  * @return string
  */
 function delCate($link, $id){
-//    $res=checkProExist($id);
-//    if(!$res){
+    $res=checkProExist($link, $id);
+    if(!$res){
         $where="id=".$id;
         if(delete($link,"imooc_cate",$where)){
             $mes="分类删除成功!<br/><a href='listCate.php'>查看分类</a>|<a href='addCate.php'>添加分类</a>";
@@ -59,9 +59,9 @@ function delCate($link, $id){
             $mes="删除失败！<br/><a href='listCate.php'>请重新操作</a>";
         }
         return $mes;
-//    }else{
-//        alertMes("不能删除分类，请先删除该分类下的商品", "listPro.php");
-//    }
+    }else{
+        alertMes("不能删除分类，请先删除该分类下的商品", "listPro.php");
+    }
 }
 
 /**
