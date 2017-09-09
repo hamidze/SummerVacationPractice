@@ -30,6 +30,12 @@ if($act=="logout"){
     $mes=editPro($link, $id);
 }elseif($act=="delPro"){
     $mes=delPro($link, $id);
+}elseif($act=="addUser"){
+    $mes=addUser($link);
+}elseif($act=="delUser"){
+    $mes=delUser($link, $id);
+}elseif($act=="editUser"){
+    $mes=editUser($link, $id);
 }
 
 ?>
