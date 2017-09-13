@@ -15,7 +15,6 @@ org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying b
 @RepositoryDefinition(domainClass = Employee.class, idClass = Integer.class)
 
 
-
 insert into employee (name, age) values ("test1",20);
 insert into employee (name, age) values ("test2",21);
 insert into employee (name, age) values ("test3",22);
@@ -41,8 +40,3 @@ id:6 , name:test5 ,age:21
 事务在Spring data中的使用：
 1）事务一般是在Service层
 2）@Query、 @Modifying、@Transactional的综合使用
-
-
-
-
-
