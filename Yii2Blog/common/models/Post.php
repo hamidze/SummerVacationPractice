@@ -3,6 +3,7 @@
 namespace common\models;
 
 use Yii;
+use yii\helpers\Html;
 
 /**
  * This is the model class for table "post".
@@ -18,6 +19,9 @@ use Yii;
  */
 class Post extends \yii\db\ActiveRecord
 {
+
+    private $_oldTags;
+
     /**
      * @inheritdoc
      */
@@ -84,5 +88,76 @@ class Post extends \yii\db\ActiveRecord
     public function getStatus0()
     {
         return $this->hasOne(Poststatus::className(), ['id' => 'status']);
+    }
+
+    public function beforeSave($insert)
+    {
+        if(parent::beforeSave($insert))
+        {
+            if($insert)
+            {
+                $this->create_time = time();
+                $this->update_time = time();
+            }
+            else
+            {
+                $this->update_time = time();
+            }
+
+            return true;
+
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    public function afterFind()
+    {
+        parent::afterFind();
+        $this->_oldTags = $this->tags;
+    }
+
+    public function afterSave($insert, $changedAttributes)
+    {
+        parent::afterSave($insert, $changedAttributes);
+        Tag::updateFrequency($this->_oldTags, $this->tags);
+    }
+
+    public function afterDelete()
+    {
+        parent::afterDelete();
+        Tag::updateFrequency($this->tags, '');
+    }
+
+    public function getUrl()
+    {
+        return Yii::$app->urlManager->createUrl(
+            ['post/detail','id'=>$this->id,'title'=>$this->title]);
+    }
+
+    public function getBeginning($length=288)
+    {
+        $tmpStr = strip_tags($this->content);
+        $tmpLen = mb_strlen($tmpStr);
+
+        $tmpStr = mb_substr($tmpStr,0,$length,'utf-8');
+        return $tmpStr.($tmpLen>$length?'...':'');
+    }
+
+    public function  getTagLinks()
+    {
+        $links=array();
+        foreach(Tag::string2array($this->tags) as $tag)
+        {
+            $links[]=Html::a(Html::encode($tag),array('post/index','PostSearch[tags]'=>$tag));
+        }
+        return $links;
+    }
+
+    public function getCommentCount()
+    {
+        return Comment::find()->where(['post_id'=>$this->id,'status'=>2])->count();
     }
 }
