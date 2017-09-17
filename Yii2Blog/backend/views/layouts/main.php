@@ -47,10 +47,10 @@ AppAsset::register($this);
     } else {
         $menuItems[] = '<li>'
             . Html::beginForm(['/site/logout'], 'post')
-//            . Html::submitButton(
-//                '注销 (' . Yii::$app->user->identity->username . ')',
-//                ['class' => 'btn btn-link']
-//            )
+            . Html::submitButton(
+                '注销 (' . Yii::$app->user->identity->username . ')',
+                ['class' => 'btn btn-link']
+            )
             . Html::endForm()
             . '</li>';
     }
