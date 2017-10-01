@@ -14,11 +14,15 @@ public class Test {
 //        HairInterface right = new RightHair();
 //        right.draw();
 
-        HairFactory factory = new HairFactory();
+//        HairFactory factory = new HairFactory();
 //        HairInterface left = factory.getHair("left");
 //        left.draw();
 
-        HairInterface left = factory.getHairByClass("factory.LeftHair");
-        left.draw();
+//        HairInterface left = factory.getHairByClass("factory.LeftHair");
+//        left.draw();
+
+        PersonFactory factory = new HNFactory();
+        Boy boy =  factory.getBoy();
+        boy.drawMan();
     }
 }
