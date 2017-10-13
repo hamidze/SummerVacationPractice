@@ -1,6 +1,6 @@
-package Strategy.impl;
+package strategy.impl;
 
-import Strategy.FlyingStrategy;
+import strategy.FlyingStrategy;
 
 /**
  * Created by Thpffcj on 2017/9/30.

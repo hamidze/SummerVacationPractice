@@ -1,6 +1,6 @@
-package Strategy;
+package strategy;
 
-import Strategy.impl.FlyWithWin;
+import strategy.impl.FlyWithWin;
 
 /**
  * Created by Thpffcj on 2017/9/30.

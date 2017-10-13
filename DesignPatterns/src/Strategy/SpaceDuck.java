@@ -1,6 +1,6 @@
-package Strategy;
+package strategy;
 
-import Strategy.impl.FlyWithRocket;
+import strategy.impl.FlyWithRocket;
 
 /**
  * Created by Thpffcj on 2017/10/1.

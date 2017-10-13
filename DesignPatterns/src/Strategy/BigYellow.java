@@ -1,6 +1,6 @@
-package Strategy;
+package strategy;
 
-import Strategy.impl.FlyNoWay;
+import strategy.impl.FlyNoWay;
 
 /**
  * Created by Thpffcj on 2017/10/1.
